@@ -28,12 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            buttonPlayer = new Button();
+            panelButtons = new Panel();
+            labelPlayer = new Label();
+            SuspendLayout();
+            // 
+            // buttonPlayer
+            // 
+            buttonPlayer.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonPlayer.Location = new Point(664, 100);
+            buttonPlayer.Margin = new Padding(4);
+            buttonPlayer.Name = "buttonPlayer";
+            buttonPlayer.Size = new Size(133, 123);
+            buttonPlayer.TabIndex = 0;
+            buttonPlayer.Text = "X";
+            buttonPlayer.UseVisualStyleBackColor = true;
+            // 
+            // panelButtons
+            // 
+            panelButtons.Location = new Point(35, 31);
+            panelButtons.Margin = new Padding(4);
+            panelButtons.Name = "panelButtons";
+            panelButtons.Size = new Size(600, 554);
+            panelButtons.TabIndex = 1;
+            // 
+            // labelPlayer
+            // 
+            labelPlayer.AutoSize = true;
+            labelPlayer.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            labelPlayer.Location = new Point(664, 65);
+            labelPlayer.Margin = new Padding(4, 0, 4, 0);
+            labelPlayer.Name = "labelPlayer";
+            labelPlayer.Size = new Size(112, 37);
+            labelPlayer.TabIndex = 2;
+            labelPlayer.Text = "Player";
+            // 
+            // TicTacToeForm
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(828, 608);
+            Controls.Add(labelPlayer);
+            Controls.Add(panelButtons);
+            Controls.Add(buttonPlayer);
+            Name = "TicTacToeForm";
+            Text = "Tic Tac Toe";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Button buttonPlayer;
+        private Panel panelButtons;
+        private Label labelPlayer;
     }
 }
