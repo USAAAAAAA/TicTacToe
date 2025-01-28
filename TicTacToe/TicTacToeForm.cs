@@ -92,7 +92,7 @@ namespace TicTacToe
 
                     winnerButtons.Add(currentButton);
 
-                    if (i == 2)
+                    if (j == 2)
                     {
                         ShowWinner(winnerButtons);
                     }
@@ -116,7 +116,7 @@ namespace TicTacToe
 
                     winnerButtons.Add(currentButton);
 
-                    if (i == 2)
+                    if (j == 2)
                     {
                         ShowWinner(winnerButtons);
                     }
@@ -183,7 +183,7 @@ namespace TicTacToe
 
         private bool ButtonHasOtherPlayersSign(Button button)
         {
-            return button.Text != buttonPlayer.Text && button.Text != "";
+            return button.Text != buttonPlayer.Text;
         }
     }
 }
